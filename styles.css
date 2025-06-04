@@ -1,0 +1,53 @@
+body {
+      margin: 0;
+      background: #111;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      perspective: 1000px;
+      color: #fff;
+      font-family: Arial, sans-serif;
+    }
+
+    h1{
+    display: flex;
+    text-align: left;
+    margin-left: 100px;
+}
+
+    .scene {
+      width: 200px;
+      height: 200px;
+      position: relative;
+      transform-style: preserve-3d;
+      animation: spin 10s infinite linear;
+      display: inline-block;
+      border-radius: 0%;
+      box-shadow: 0 0 30px rgb(142, 53, 5);
+    }
+
+    .face {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      background: #222;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 2px solid #ac4a0a;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .front  { transform: rotateY(0deg)    translateZ(100px); }
+    .back   { transform: rotateY(180deg)  translateZ(100px); }
+    .right  { transform: rotateY(90deg)   translateZ(100px); }
+    .left   { transform: rotateY(-90deg)  translateZ(100px); }
+    .top    { transform: rotateX(90deg)   translateZ(100px); }
+    .bottom { transform: rotateX(-90deg)  translateZ(100px); }
+
+    @keyframes spin {
+      from { transform: rotateX(0deg) rotateY(0deg); }
+      to   { transform: rotateX(360deg) rotateY(360deg); }
+    }
