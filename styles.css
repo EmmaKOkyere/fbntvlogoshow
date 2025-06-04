@@ -1,6 +1,7 @@
 body {
       margin: 0;
-      background: #111;
+      background: #0b0303;
+      background-image: url(/images/fbntv.png);
       display: flex;
       justify-content: center;
       align-items: center;
@@ -17,14 +18,14 @@ body {
 }
 
     .scene {
-      width: 200px;
-      height: 200px;
+      width: 300px;
+      height: 300px;
       position: relative;
       transform-style: preserve-3d;
       animation: spin 10s infinite linear;
       display: inline-block;
       border-radius: 0%;
-      box-shadow: 0 0 30px rgb(142, 53, 5);
+      box-shadow: 0 0 80px rgba(142, 53, 5, 0.573);
     }
 
     .face {
